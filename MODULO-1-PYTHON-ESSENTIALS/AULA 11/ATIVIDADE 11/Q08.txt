@@ -1,0 +1,1 @@
+A representação de sequência de DNA usando uma tupla em python em propósitos reais faz total sentido, já que as tuplas são imutáveis o que garante a integridade e não seja inadvertidamente alterada. Outras vantagens de se usar tuplas é a fácil indexação e a simplicidade do uso desta estrutura de dados para o propósito de sequenciamento de DNS

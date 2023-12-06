@@ -1,0 +1,6 @@
+Para usar um módulo que não está instalado nativamente no python eu preciso realizar 
+a instalação desse módulo no python usando o programa "pip" que é um sistema de 
+gerenciamento de pacotes padrão de facto usado para instalar e gerenciar pacotes 
+de software escritos em Python. Por exemplo para instalar o módulo do opencv eu preciso 
+executar o seguinte comando no meu terminal: "pip install opencv", e logo em seguida eu 
+já posso importar o módulo normalmente como se ele fosse um módulo nativo.

@@ -1,0 +1,20 @@
+
+alunos = ['Deivid', 'Athilio', 'Gabriel', 'Brenda']
+print(alunos)
+print(type(alunos))
+alunos.remove('Gabriel')
+print(alunos)
+alunos.pop(2)
+print(alunos)
+alunos.insert(2, 'Vinicius')
+print(alunos)
+alunos.insert(1, 'Luiz')
+print(alunos)
+alunos.insert(2, 'Ana')
+print(alunos)
+alunos.insert(2, 'Carlos')
+print(alunos)
+#
+print(alunos[1])
+print(len(alunos))
+print(type(alunos))

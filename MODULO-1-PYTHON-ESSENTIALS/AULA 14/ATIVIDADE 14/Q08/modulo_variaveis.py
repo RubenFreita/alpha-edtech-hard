@@ -1,0 +1,9 @@
+
+PI = 3.14159265359
+
+E = 2.7182818284
+
+MATEMATICO = "Boole"
+
+PROFESSOR = "Marcotti"
+
