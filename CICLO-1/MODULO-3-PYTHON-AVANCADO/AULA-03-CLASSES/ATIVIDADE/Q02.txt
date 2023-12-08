@@ -1,0 +1,2 @@
+Apenas a função get_user_words() -> List[str], que é impura porque nunca se sabe quantas 
+palavras o usuário irá adicionar na lista de palavras.
