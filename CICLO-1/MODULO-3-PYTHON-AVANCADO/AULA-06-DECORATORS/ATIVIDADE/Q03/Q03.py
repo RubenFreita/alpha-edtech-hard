@@ -1,7 +1,7 @@
 
 
 
-def divide_1(entrada):
+def divide_1(entrada: float) -> None:
     try:
         print(f"A divisão de 1 por {entrada} é: {1/entrada}")
     except ZeroDivisionError:
