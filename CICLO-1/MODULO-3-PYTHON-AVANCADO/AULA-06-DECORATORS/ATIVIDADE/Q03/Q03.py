@@ -3,13 +3,15 @@
 
 def divide_1(entrada: float) -> None:
     try:
-        print(f"A divisão de 1 por {entrada} é: {1/entrada}")
+        x = 1/entrada
     except ZeroDivisionError:
         print("Não foi possível realizar a divisão, pois a divisão de 1 por 0 é indefinida.")
     except TypeError:
         print("Não foi possível realizar a divisão, pois não é possível dividir um número int com outro tipo.")
     except:
         print("Não foi possível realizar a divisão.")
+    else:
+        print(f"A divisão de 1 por {entrada} é: {x}")
     finally:
         print("Meu nome é Ruben Freitas.")    
 
