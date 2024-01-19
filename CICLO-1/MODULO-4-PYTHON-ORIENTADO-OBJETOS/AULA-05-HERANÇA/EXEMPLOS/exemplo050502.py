@@ -49,7 +49,6 @@ print(kira.raca)
 kira.raca = "husky + caramelo"
 print(kira.raca) 
 
-# print(kira.racao)
 
 
 
