@@ -2,12 +2,12 @@ import asyncio
 
 async def primeira_corrotina():
     print("Inicio da primeira corrotina...")
-    await asyncio.sleep(2)
+    await asyncio.sleep(3)
     print("Fim da primeira corrotina...")
 
 async def segunda_corrotina():
     print("Inicio da segunda corrotina...")
-    await asyncio.sleep(3)
+    await asyncio.sleep(2)
     print("Fim da segunda corrotina...")
 
 async def executa_corrotinas():

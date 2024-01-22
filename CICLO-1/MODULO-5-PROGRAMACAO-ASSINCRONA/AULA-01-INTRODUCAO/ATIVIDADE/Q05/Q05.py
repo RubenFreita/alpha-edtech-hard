@@ -10,7 +10,8 @@ class Sanduiche():
         print("Corta o pão...")
         print("Fritando os blends...")
         await asc.sleep(2)
-        print("Corta os legumes...")
+        print("Cortando os legumes...")
+        await asc.sleep(2)
         print("Finaliza a montagem")
         evento.set()
         print("Sanduiche montado.")
@@ -34,6 +35,6 @@ async def sistema_lanchonete():
     sanduiche = Sanduiche("Carne de patinho", "3 blends")
     montagem = asc.create_task(sanduiche.monta_sanduiche(evento))
 
-    
     await asc.gather(pedido, montagem)
+
 asc.run(sistema_lanchonete())
