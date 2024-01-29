@@ -235,29 +235,5 @@ clientes = [
 
 if __name__ == "__main__":
     atendimento = Atendimento()
-    # adicionar_clientes_fila(clientes, atendimento)
 
-    # print("\n\nINFO: Mostrando Resultados Antes Do Primeiro Cliente Ser Atendido:")
-
-    # atendimento.informacoes_cliente_atendimento_atual()
-    # atendimento.listar_clientes_fila()
-
-    # # For para atender 20 clientes
-    # for _ in range(20):
-    #     atendimento.atender_prox_cliente()
-
-    # print("\n\nINFO: Mostrando Resultados Depois De Atender 20 Clientes:")
-
-    # atendimento.informacoes_cliente_atendimento_atual()
-    # atendimento.listar_clientes_fila()
-
-    # print("INFO: Verificando se a fila está vazia.")
-    # print(atendimento.fila_esta_vazia())
-
-    # atendimento.adicionar_cliente_fila(Cliente("Ruben"))
-
-    # atendimento.informacoes_cliente_atendimento_atual()
-    # atendimento.listar_clientes_fila()
-    # atendimento.atender_prox_cliente()
-    # atendimento.listar_clientes_fila()
     menu(atendimento, clientes)
