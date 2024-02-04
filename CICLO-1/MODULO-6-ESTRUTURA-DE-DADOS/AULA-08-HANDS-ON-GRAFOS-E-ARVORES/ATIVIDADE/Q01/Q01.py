@@ -13,18 +13,6 @@ class Comentario:
         self.riso = riso
         self.raiva = raiva
 
-    # def aumentar_curtida(self, qtd):
-    #     self.curtida += qtd
-
-    # def aumentar_apoio(self, qtd):
-    #     self.apoio += qtd
-
-    # def aumentar_riso(self, qtd):
-    #     self.riso += qtd
-
-    # def aumentar_raiva(self, qtd):
-    #     self.raiva += qtd
-
 
 class NodeCometario:
     def __init__(self, comentario: Comentario) -> None:
@@ -350,27 +338,3 @@ def main_menu():
 
 if __name__ == "__main__":
     main_menu()
-
-
-# if __name__ == "__main__":
-#     comentario1 = Comentario("lindoo", 1, 10, 2, 20)
-#     comentario2 = Comentario("top", 10, 1, 30, 40)
-#     comentario3 = Comentario("bacana", 40, 2, 4, 1)
-#     comentario4 = Comentario("horrivel", 39, 10, 0, 4)
-#     comentario5 = Comentario("ta magro demais", 20, 100, 2, 1)
-#     comentario6 = Comentario("iae", 100, 1, 10, 10)
-
-#     postagem = ComentarioTree()
-#     postagem.insert(comentario1)
-#     postagem.insert(comentario2)
-#     postagem.insert(comentario3)
-#     postagem.insert(comentario4)
-#     postagem.insert(comentario5)
-#     postagem.insert(comentario6)
-
-#     postagem.print_tree()
-#     postagem.display_by_support()
-#     postagem.display_by_likes()
-#     postagem.display_by_support()
-#     postagem.display_by_laugh()
-#     postagem.display_by_anger()
