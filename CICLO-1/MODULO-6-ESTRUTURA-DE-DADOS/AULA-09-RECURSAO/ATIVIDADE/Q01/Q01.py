@@ -11,12 +11,10 @@ Instruções
 """
 
 
-def inverte_texto(texto: str, n: int, lista_invertida=[]):
+def inverte_texto(array, n):
     if n - 1 == 0:
-        lista_invertida.append(texto[n - 1])
-        return "".join(lista_invertida)
-    lista_invertida.append(texto[n - 1])
-    return inverte_texto(texto, n - 1, lista_invertida)
+        return array[n - 1]
+    return array[n - 1] + inverte_texto(array, n - 1)
 
 
 texto = "invertido"
