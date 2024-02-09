@@ -1,3 +1,5 @@
+from prettytable import PrettyTable
+
 filmes_recomendados = [
     {"titulo": "Inception", "ano": 2010, "relevancia": 98},
     {"titulo": "Interstellar", "ano": 2014, "relevancia": 99},
@@ -70,4 +72,18 @@ def ordenar_filmes(lista_filmes):
 
 
 ordenados = ordenar_filmes(filmes_recomendados)
-print(ordenados)
+
+tabela = PrettyTable()
+tabela.title = "Filmes Recomendados"
+
+tabela.field_names = ["Título", "Ano", "Relevância"]
+for i in ordenados:
+    tabela.add_row(
+        [
+            i["titulo"],
+            str(i["ano"]),
+            str(i["relevancia"]),
+        ]
+    )
+
+print(tabela, end="\n\n")
