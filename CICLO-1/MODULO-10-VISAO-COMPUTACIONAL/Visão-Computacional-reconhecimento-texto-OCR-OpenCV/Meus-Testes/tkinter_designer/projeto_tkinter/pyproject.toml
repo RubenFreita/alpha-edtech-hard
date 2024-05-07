@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "projeto-tkinter"
+version = "0.1.0"
+description = ""
+authors = ["rubenfreita <rubensfreitas65@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tkdesigner = "^1.0.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,6 @@
+Colab PI01 Visão Computacional
+ https://colab.research.google.com/drive/1nqyxo_dmEKnrc-xnevi2X7CoBJ5dcozc?usp=sharing
+Colab PI02 Processamento de Imagens como uma matriz de inteiros
+ https://colab.research.google.com/drive/1wL9dF7l-nKB05ApXm-Mg7ZdHkPFpVw91?usp=sharing
+Colab PI03 ListEx do PI01 e PI02_guia de estudo
+ https://colab.research.google.com/drive/12nmbxDyzOlHfVq1vunh7lcJba1XjhzGk?usp=sharing

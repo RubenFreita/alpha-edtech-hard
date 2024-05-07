@@ -1,0 +1,190 @@
+
+
+===================
+artigo-desbalanceamento.png
+Undersampling
+
+É uma técnica que consiste em manter todos os dados da classe com menor frequência e
+diminuir a quantidade dos que estão na classe de maior frequência, fazendo com que as
+observações no conjunto possuam dados com a variável alvo equilibrada.
+
+Pode ser uma vantagem utilizar o undersampling para reduzir o armazenamento dos dados e
+o tempo de execução de códigos, uma vez que a quantidade de dados será bem menor. Uma
+das técnicas mais utilizadas é o Near Miss que diminui aleatoriamente a quantidade de
+valores da classe majoritária.
+
+Algo muito interessante do Near Miss é que ele utiliza a menor distância média dos K-vizinhos
+mais próximos, ou seja, seleciona os valores baseando-se no método KNN (K-nearest
+neighbors) para reduzir a perda de informação.
+
+Caso queira saber mais sobre como funciona a técnica Near Miss, você pode checar o artigo
+KNN approach to unbalanced data distributions: a case study involving information extraction.
+
+Oversampling
+
+É uma técnica que consiste em aumentar a quantidade de registros da classe com menor
+frequência até que a base de dados possua uma quantidade equilibrada entre as classes da
+variável alvo. Para aumentar a quantidade de registros, podemos duplicar aleatoriamente os
+registros da classe com menor frequência. Porém, isso fará com que muitas informações
+fiquem idênticas, o que pode impactar no modelo.
+
+Uma vantagem dessa técnica é que nenhuma informação dos registros que possuíam a
+classe com maior frequência é perdida. Isso faz com que o conjunto de dados possua muitos
+registros para alimentar os algoritmos de machine learning. Por sua vez, o armazenamento e
+o tempo de processamento crescem bastante e há a possibilidade de ocorrer um sobreajuste
+nos dados que foram duplicados. Este sobreajuste acontece quando o modelo se torna muito
+bom em prever os resultados para os dados de treinamento, mas não generaliza bem para
+novos dados.
+
+Para evitar que existam muitos dados idênticos, pode ser utilizada a técnica SMOTE, que
+consiste em sintetizar novas informações com base nas já existentes. Esses dados
+*sintéticos” são relativamente próximos aos dados reais, mas não são idênticos. Para saber
+mais como funciona a técnica SMOTE, você pode ler o artigo SMOTE: Synthetic Minority
+Over-sampling Technique.
+
+
+===================
+artigo-eng-dados.png
+Habilidades
+
+Hard Skills
+
+Ferramentas como Hadoop e Spark e linguagens como Scala, Java e Python são muito
+importantes. Além delas, é preciso conhecer vários frameworks, bancos de dados e serviços
+cloud. Tais como:
+
+* Google Big Query
+* Kafka
+
+* MongoDB
+
+* MySQL
+
+* Cassandra
+
+- storm
+
+* Neo4j
+
+* AWSKinesis
+
+* AWS RDS, entre outras.
+
+Não é necessário dominar todas essas ferramentas. O importante é ter conhecimento geral a
+respeito delas que permita escolher qual a mais adequada para solucionar o problema.
+
+Soft Skills
+
+Nesse ponto, destacamos a habilidade de comunicação, com objetivo de entender o que
+líderes de negócios desejam extrair dos dados. Também precisamos de conhecimento da
+regra de negócio da empresa, entre outras habilidades, como:
+
+* Adaptabilidade: capacidade de se adaptar à mudanças, sejam de processos ou ferramentas.
+
+* Pensamento criativo: modo como se encara os problemas e a importância de ter soluções c
+
+* Negociaç
+serviços.
+
+* Trabalho em equipe: relacionado a estimular as competências coletivas e delegar tarefas em prol do
+bom resultado.
+
+ivas.
+
+tade de saber se comunicar, seja para nego:
+
+prazos ou até mesmo vendas de
+
+* Inteligência emocional: saber lidar com situações de estresse e grande pressão.
+
+Caso queira saber mais sobre soft skills, recomendo a leitura deste artigo: Soft Skills mais
+importantes para a área de dados.
+
+
+===================
+artigo-spark.png
+Tipos de processamento de dados
+
+No contexto Big Data, o processamento de dados em batch (lote) é bastante conhecido
+desde o surgimento do Hadoop. Devido aos seus recursos e robustez, o modelo de
+programação MapReduce do Hadoop tornou-se uma das principais estruturas de
+processamento de dados em batch. Com o passar do tempo boa parte dos desafios neste
+campo foram bem solucionados e desde então a comunidade mudou sua atenção para outro
+desafio, o processamento de dados em streaming.
+
+Algumas pessoas já leram ou ouviram algo relacionado com a palavra streaming, por exemplo,
+ao comentar sobre plataformas de transmissão de áudio e vídeo como Spotify, Amazon
+Music, Youtube e Netflix ou aplicações mais específicas como sistemas de monitoramento de
+bolsas de valores ou aplicativos de coleta de dados enviados por sensores (loT). Mas, em um
+cenário de análise de dados, o que seria processamento de dados em streaming?
+
+O processamento de dados em batch executa uma determinada tarefa considerando um
+conjunto de dados de entrada estático e de tamanho fixo para produzir o resultado final, ou
+Seja, o processamento é interrompido quando chega ao final do conjunto de dados. Por outro
+lado, o processamento em stream consiste em executar uma determinada tarefa
+considerando fluxos de dados ilimitados. Dessa forma, o processamento é contínuo e de
+longa duração, como se estivéssemos trabalhando com bases de dados infinitas.
+
+Apache Spark
+
+Com o elevado crescimento na geração de dados e a necessidade das empresas em agregar
+valor para os seus negócios com estas informações, surgiram alguns frameworks com o
+objetivo de processar grandes volumes de dados de forma distribuída e com alto
+desempenho. Um destes frameworks que vem sendo bastante utilizado no mercado é o
+Apache Spark.
+
+O Apache Spark é um framework que dá suporte para mais de uma linguagem de
+programação. Ele é utilizado para executar engenharia de dados, data science e machine
+learning em apenas um computador ou em um cluster. É uma ferramenta muito aplicada no
+contexto Big Data.
+
+O Spark tem um conjunto de componentes para solucionar problemas específicos, todos
+construídos sobre o Spark Core, que é o componente que disponibiliza as funções básicas
+para o processamento. Entre estes componentes temos o Spark Streaming, que possibilita o
+processamento de fluxos de dados em tempo real.
+
+
+===================
+artigo-termos-ML.png
+Machine Learning (aprendizado de máquina) é o ramo da Inteligência Artificial que possibilita
+aos computadores aprenderem com os dados com a menor interferência humana possível.
+Sistemas de recomendações, detecção de fraudes, reconhecimento de imagens e comandos
+por voz são alguns exemplos de aplicações presentes no nosso cotidiano.
+
+Há diversas formas nas quais as máquinas podem realizar esse aprendizado. No artigo
+Desmistificando termos em Machine Learning é mencionado o aprendizado de máquina
+supervisionado, mas o que ele significa? Quais são as outras formas? Neste artigo vamos
+desmistificar termos relacionados aos tipos de aprendizagem, quais algoritmos fazem parte
+de cada um deles e algumas de suas aplicações.
+
+Aprendizado supervisionado (supervised learning)
+
+No aprendizado de máquina supervisionado, o algoritmo aprende com dados usados para
+
+treinamento com os quais já se sabe a solução, chamada de rótulos (/abels). Quando estamos
+trabalhando com um algoritmo supervisionado, usamos um conjunto de dados que já estão
+inclusos nas respostas a serem treinadas no modelo.
+
+O exemplo mais clássico desse tipo de algoritmo é o de classificar se um e-mail é spam (não
+solicitado pelo usuário, como no caso de publicidades) ou ham. Para treinar o modelo,
+usamos muitos e-mails que contém a resposta para a pergunta "É spam?”. À partir das
+características dos e-mails classificados como "Sim, é spam”", o algoritmo aprende a rotular o
+que é spam e ham. Esse tipo de modelo é denominado de classificação.
+
+Uma outra aplicação que pode ser feita com modelos supervisionados é o de prever um
+determinado número, como o preço de uma casa, quilometragem de automóvel, idade, etc.
+Esse tipo de modelo é denominado de regressão, pois encontram padrões de como uma
+variável muda em relação às outras.
+
+Alguns desses algoritmos são:
+
+* k-Nearest Neighbors
+* Support Vector Machines (SVMs)
+* Linear regression
+
+* Logistic regression
+
+* Decision Trees
+
+* Random Forests
+
