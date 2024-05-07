@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "sistema-reserva-restaurante"
+version = "0.1.0"
+description = ""
+authors = ["rubenfreita <rubensfreitas65@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sqlalchemy = "^2.0.28"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
